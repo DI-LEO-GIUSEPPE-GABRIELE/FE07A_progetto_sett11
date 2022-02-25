@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { Subscriber } from 'rxjs';
 @Component({
   template: `
-      <p *ngIf ='isLoading'>loading</p>
+      <p class="text-white mx-5 h1" *ngIf ='isLoading'>Carico lista prodotti...</p>
       <div class="card-body rounded mb-5">
       <div class="card text-center justify-content-around">
         <div *ngFor="let articolo of articoliNegozio">
@@ -44,6 +44,6 @@ export class NegozioPage implements OnInit {
         this.isLoading = false;
       }
       this.articoliNegozio = Servizi.articoli;
-    }, 20)
+    }, 2000)
   }
 }

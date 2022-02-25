@@ -13,8 +13,11 @@ import * as Servizi from '../store.service';
         {{ articolo.price | currency: 'EUR' }}
       </p>
       <div class="card-footer mt-5">
-        <button type="button" class="btn btn-dark" (click)="aggiungi()">
+        <button type="button" class="btn btn-dark mx-2" (click)="aggiungi()">
           Aggiungi al carrello
+        </button>
+        <button type="button" class="btn btn-dark" [routerLink]="['/']">
+          Torna al negozio
         </button>
       </div>
     </div>
