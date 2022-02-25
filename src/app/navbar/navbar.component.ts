@@ -11,7 +11,7 @@ import { carrello } from '../app.service';
               <a class="nav-link" [routerLink]="['/']">Negozio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/carrello']">Carrello ( {{ carrelloNav.length }} )</a>
+              <a class="nav-link" [routerLink]="['/carrello']">Carrello ( {{ lunghezzaCarrello.length }} )</a>
             </li>
           </ul>
         </div>
@@ -21,7 +21,7 @@ import { carrello } from '../app.service';
   styles: [``],
 })
 export class NavbarComponent implements OnInit {
-  carrelloNav = carrello;
+  lunghezzaCarrello = carrello;
 
   constructor() { }
 
