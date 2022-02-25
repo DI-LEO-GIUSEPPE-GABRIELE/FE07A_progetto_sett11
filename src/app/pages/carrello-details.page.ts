@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Articolo } from '../models/articolo';
-import * as Servizi from '../store.service';
+import * as Servizi from '../app.service';
 
 @Component({
   template: `

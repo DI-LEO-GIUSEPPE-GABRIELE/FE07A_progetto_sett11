@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Servizi from '../store.service';
+import * as Servizi from '../app.service';
 import { Articolo } from '../models/articolo';
 import { HttpClient } from '@angular/common/http';
 import { Subscriber } from 'rxjs';

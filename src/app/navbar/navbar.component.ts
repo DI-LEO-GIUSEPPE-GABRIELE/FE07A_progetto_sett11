@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { carrello } from '../store.service';
+import { carrello } from '../app.service';
 @Component({
   selector: 'app-navbar',
   template: `

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Articolo } from '../models/articolo';
-import * as Servizi from '../store.service';
+import * as Servizi from '../app.service';
 import { ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 @Component({
